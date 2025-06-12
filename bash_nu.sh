@@ -146,6 +146,9 @@ getFileSize() {
         elif (( age < 31104000 )); then
             text="$((age / 2592000)) months ago"
             color="${COLOR5}$text${RESET}"
+        elif (( age < 62208000 )); then
+            text="$((age / 31104000)) year ago"
+            color="${COLOR5}$text${RESET}"
         else
             text="$((age / 31104000)) years ago"
             color="${COLOR5}$text${RESET}"

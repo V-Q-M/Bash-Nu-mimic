@@ -5,7 +5,6 @@ A minimalist Bash script that mimics the **visual appearance of [nu-shell](https
 ![Preview of lsn](preview.png)
 
 
-
 ---
 
 ## Features
@@ -48,7 +47,7 @@ lsn -a           # Show hidden files.
 lsn <path>`      # Show files in specified directory.
 ```
 
-To use replace `ls` with `lsn`, add the alias to your `.bashrc`
+To replace `ls` with `lsn`, add the alias to your `.bashrc`
 ```bash
 alias ls="lsn"
 ```

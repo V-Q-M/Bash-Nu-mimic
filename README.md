@@ -2,6 +2,10 @@
 
 A minimalist Bash script that mimics the **visual appearance of [nu-shell](https://github.com/nushell/nushell)** — while staying **POSIX-compliant** and lightweight. 
 
+![Preview of lsn](preview.png)
+
+
+
 ---
 
 ## Features

@@ -31,7 +31,7 @@ git clone https://github.com/V-Q-M/Bash-Nu-mimic.git
 
 Add the script to your .bashrc
 ```bash
-. "$HOME/scripts/bash_nu.sh"
+echo '. "$HOME/scripts/bash_nu.sh"' >> ~/.bashrc
 ```
 
 Reload the shell (or restart terminal):

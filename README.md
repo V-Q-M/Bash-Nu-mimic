@@ -1,6 +1,6 @@
 # Bash-Nu-mimic
 
-A simple bash script that aims to mimic the visual appearance of the nu-shell, while still being posix compliant.
+A minimalist Bash script that mimics the **visual appearance of [nu-shell](https://github.com/nushell/nushell)** — while staying **POSIX-compliant** and lightweight. 
 
 ---
 
@@ -39,12 +39,13 @@ source ~/.bashrc
 ## Usage
 Use the custom `lsn` command for NuShell-inspired directory listings.
 ```bash
-lsn                       # default listing
-lsn -a`,                  # Show hidden files.
-`lsn <path-to-directory>` # Show files in specified directory.
+lsn              # default listing
+lsn -a           # Show hidden files.
+lsn <path>`      # Show files in specified directory.
+```
 
 To use replace `ls` with `lsn`, add the alias to your `.bashrc`
-```
+```bash
 alias ls="lsn"
 ```
 

@@ -57,5 +57,9 @@ Then reload the shell (or restart terminal):
 source ~/.bashrc
 ```
 
+---
+
+This project also features a experimental `cdi` (cd immediate), which allows cd-ing with a index on top of using directory names. E.g. `cdi 0` cds into the entry with index 0, if it is a directory.
+
 ## License
 This project is released under the MIT License

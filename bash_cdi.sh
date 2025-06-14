@@ -1,24 +1,29 @@
+#!/bin/sh
+
 cdi() {
-    local arg="$1"
+    arg="$1"
     # If the argument is a valid directory name, cd into it directly
-    if [[ -d "$arg" ]]; then
-        cd "$arg"
-    elif [[ "$arg" =~ ^[0-9]+$ ]]; then
-        # Otherwise, treat it as an index
-        local index=0
+    if [ -d "$arg" ]; then
+        cd "$arg" || exit
+    elif case "$arg" in
+        [0-9]*) : ;;
+         *) false ;;
+    esac; then
+# Otherwise, treat it as an index
+        index=0
         for item in */; do
-            if [[ $index -eq $arg ]]; then
-                cd "$item"
+            if [ $index -eq "$arg" ]; then
+                cd "$item" || exit
                 break
             fi
-            ((index++))
+	i=$((i + 1))
         done
     else
-	cd ~
-        lsn
+	cd ~ || exit
+        ~/scripts/sh_nu.py .
         return 1
     fi
 
-    lsn
+    ~/scripts/sh_nu.py .
 }
 

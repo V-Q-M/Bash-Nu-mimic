@@ -1,3 +1,5 @@
+#!/bin/sh
+
 lsn(){ 
     local showHidden=false
     local dir="."
@@ -100,6 +102,7 @@ getFileSize() {
     elif [[ -d "$item" ]]; then
         local dir_size
         dir_size=$(du -sb "$item" 2>/dev/null | cut -f1)
+        #dir_size=$(stat -c %s "$item" 2>/dev/null | cut -f1)
 
         if [[ -z "$dir_size" ]]; then
             echo "no access"

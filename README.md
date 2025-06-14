@@ -9,11 +9,15 @@ A minimalist Bash script that mimics the **visual appearance of [nu-shell](https
 
 ## Features
 
-- NuShell-like `ls` output in Bash
+### Bash version
+- NuShell mimic of `ls` output in Bash
 - Lightweight and dependency-free
-- POSIX-compliant
 - Easy to install and use
 
+### Python version
+- NuShell inspired `ls` output in shell
+- Very fast output
+- Customizable colors
 ---
 
 ## Installation
@@ -29,6 +33,8 @@ Clone the repo with
 git clone https://github.com/V-Q-M/Bash-Nu-mimic.git
 ```
 
+### Bash version
+
 Add the script to your .bashrc
 ```bash
 echo '. "$HOME/scripts/bash_nu.sh"' >> ~/.bashrc
@@ -38,6 +44,12 @@ Reload the shell (or restart terminal):
 ```bash
 source ~/.bashrc
 ```
+### Python version
+
+Add a alias to your .bashrc
+```bash
+echo 'alias lsn="~/scripts/sh_nu.py"' >> ~/.bashrc
+
 
 ## Usage
 Use the custom `lsn` command for NuShell-inspired directory listings.

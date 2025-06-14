@@ -49,7 +49,7 @@ source ~/.bashrc
 Add a alias to your .bashrc
 ```bash
 echo 'alias lsn="~/scripts/sh_nu.py"' >> ~/.bashrc
-
+```
 
 ## Usage
 Use the custom `lsn` command for NuShell-inspired directory listings.
